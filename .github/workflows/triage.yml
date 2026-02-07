@@ -1,0 +1,13 @@
+
+name: Advanced Issue Triage
+# TODO: Implement the logic described in the task
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
